@@ -45,27 +45,27 @@ RandomForestClassifier(
 )
 
 # Code Structure
-# 1. Data Loading and Inspection
+1. Data Loading and Inspection
 
 train_data = pd.read_csv("train.csv")
 test_data = pd.read_csv("test.csv")
 
-# 2. Initial Analysis
+2. Initial Analysis
 
 Calculate survival rates by gender
 Provide baseline insights
 
-# 3. Feature Engineering
+3. Feature Engineering
 
 Feature selection
 One-hot encoding
 
-# 4. Model Training and Prediction
+4. Model Training and Prediction
 
 Model training
 Generate predictions
 
-# 5. Output Generation
+5. Output Generation
 
 Create submission file
 Save predictions
