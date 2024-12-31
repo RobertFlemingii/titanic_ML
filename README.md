@@ -4,13 +4,17 @@ A machine learning model to predict passenger survival on the Titanic using Rand
 # Setup
 # Virtual Environment
 
-#Create virtual environment
+Create virtual environment
+
 python -m venv env
 
-#Activate virtual environment
-#On Unix/macOS:
+Activate virtual environment
+On Unix/macOS:
+
 source env/bin/activate
-#On Windows:
+
+On Windows:
+
 env\Scripts\activate
 
 # Dependencies
