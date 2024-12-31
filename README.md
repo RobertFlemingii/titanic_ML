@@ -3,7 +3,8 @@ Overview
 A machine learning model to predict passenger survival on the Titanic using Random Forest Classification.
 Setup
 Virtual Environment
-bashCopy# Create virtual environment
+
+# Create virtual environment
 python -m venv env
 
 # Activate virtual environment
@@ -11,8 +12,10 @@ python -m venv env
 source env/bin/activate
 # On Windows:
 env\Scripts\activate
+
 Dependencies
-bashCopypip install numpy pandas scikit-learn
+pip install numpy pandas scikit-learn
+
 Project Structure
 Data Files
 
@@ -30,15 +33,19 @@ Parch - Number of parents/children aboard
 
 Model Information
 Classifier Details
-pythonCopyRandomForestClassifier(
+
+RandomForestClassifier(
     n_estimators=100,
     max_depth=5,
     random_state=1
 )
+
 Code Structure
 1. Data Loading and Inspection
-pythonCopytrain_data = pd.read_csv("train.csv")
+
+train_data = pd.read_csv("train.csv")
 test_data = pd.read_csv("test.csv")
+
 2. Initial Analysis
 
 Calculate survival rates by gender
@@ -74,4 +81,7 @@ Check 'submission.csv' for predictions
 
 Output Format
 submission.csv structure
-ColumnDescriptionPassengerIdPassenger identification numberSurvivedPredicted survival (0 = No, 1 = Yes)
+
+Column         Description
+PassengerId    Passenger identification number
+Survived       Predicted survival (0 = No, 1 = Yes)
